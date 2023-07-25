@@ -1,11 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/b08442d712.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <!-- header section starts here--------------------------------------- -->
+    <header class="max-w-screen-lg mx-auto">
+        <!-- navbar starts here -->
+        <nav class="mt-4 md:mt-12">
+            <div class="navbar md:bg-[#F85559] md:rounded-full p-4">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                            <div class="flex">
+                                <input type="search" name="" id="" class="rounded-full md:w-52 md:h-7 p-4"
+                                    placeholder="Search Here">
+                                <div class="relative">
+                                    <a href=""><i class="fa-solid fa-magnifying-glass absolute top-5 -left-8 text-[#121212]"></i></a>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="./images/logo.png" alt="" class="h-10">
+                        <h3 class="text-xl md:text-3xl font-bold md:text-white">Fruit Burst</h3>
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-white">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end hidden lg:flex">
+                    <input type="search" name="" id="" class="rounded-full md:w-52 md:h-7 p-4"
+                        placeholder="Search Here">
+                    <div class="relative">
+                        <a href=""><i class="fa-solid fa-magnifying-glass absolute -top-2 -left-8 text-[#121212]"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 </body>
+
 </html>
