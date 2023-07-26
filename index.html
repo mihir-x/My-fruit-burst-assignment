@@ -17,6 +17,57 @@
             padding: 0;
             font-family: 'Lato', sans-serif;
         }
+
+        .banner-background1 {
+            background-image: url(./images/banner1.png),linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-blend-mode: overlay;
+        }
+
+        .banner-background2 {
+            background: url(./images/banner2.png),linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-blend-mode: overlay;
+        }
+
+        .banner-background3 {
+            background: url(./images/banner3.png),linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-blend-mode: overlay;
+        }
+
+        .banner-background4 {
+            background-image: url(./images/banner4.png),linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-blend-mode: overlay;
+        }
+
+        .my-btn {
+            padding: 1.25rem 1.875rem;
+            background: #F85559;
+            border-radius: 8px;
+            border: none;
+            color: white;
+            font-weight: 800;
+            
+        }
+        .my-btn-sm{
+            padding: .825rem 1rem;
+            background: #F85559;
+            border-radius: 8px;
+            border: none;
+            color: white;
+            font-weight: 700;
+            
+        }
     </style>
 </head>
 
@@ -24,7 +75,7 @@
     <!-- header section starts here--------------------------------------- -->
     <header class="max-w-screen-lg mx-auto">
         <!-- navbar starts here -->
-        <nav class="mt-4 md:mt-12">
+        <nav class="mt-4 md:mt-12 mb-4 md:mb-14">
             <!-- <div class="navbar md:bg-[#F85559] md:rounded-full p-4">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -92,14 +143,14 @@
                                 <input type="search" name="" id="" class="rounded-full md:w-52 md:h-7 p-4"
                                     placeholder="Search Here">
                                 <div class="relative">
-                                    <a href=""><i class="fa-solid fa-magnifying-glass absolute top-5 -left-8 text-[#121212]"></i></a>
+                                    <a href=""><i
+                                            class="fa-solid fa-magnifying-glass absolute top-5 -left-8 text-[#121212]"></i></a>
                                 </div>
                             </div>
                         </ul>
                     </div>
                     <div class="hidden lg:flex">
-                        <ul tabindex="0"
-                            class="menu menu-horizontal px-1 text-white">
+                        <ul tabindex="0" class="menu menu-horizontal px-1 text-white">
                             <li><a>Homepage</a></li>
                             <li><a>Portfolio</a></li>
                             <li><a>About</a></li>
@@ -130,12 +181,89 @@
                     <input type="search" name="" id="" class="rounded-full md:w-52 md:h-7 p-4"
                         placeholder="Search Here">
                     <div class="relative">
-                        <a href=""><i class="fa-solid fa-magnifying-glass absolute -top-2 -left-8 text-[#121212]"></i></a>
+                        <a href=""><i
+                                class="fa-solid fa-magnifying-glass absolute -top-2 -left-8 text-[#121212]"></i></a>
                     </div>
                 </div>
             </div>
         </nav>
+        <!-- banner starts here------------------------------ -->
+        <section class="px-4 relative">
+            <div class="carousel w-full rounded-lg">
+                <div id="slide1"
+                    class="carousel-item relative w-full banner-background1 h-48 md:h-96 justify-center text-center">
+                    <div class="md:space-y-4">
+                        <h1 class="text-xl md:text-4xl lg:text-5xl font-bold text-white mt-4 md:mt-10">Exotic tastes at your <br> doorstep</h1>
+                        <p class="text-white text-xs md:text-base">We supply highly quality organic products</p>
+                        <button class="btn my-btn-sm md:my-btn">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2"
+                    class="carousel-item relative w-full banner-background2 h-48 md:h-96 justify-center text-center">
+                    <div class="md:space-y-4">
+                        <h1 class="text-xl md:text-4xl lg:text-5xl font-bold text-white mt-4 md:mt-10">Exotic tastes at your <br> doorstep</h1>
+                        <p class="text-white text-xs md:text-base">We supply highly quality organic products</p>
+                        <button class="btn my-btn-sm md:my-btn">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3"
+                    class="carousel-item relative w-full banner-background3 h-48 md:h-96 justify-center text-center">
+                    <div class="md:space-y-4">
+                        <h1 class="text-xl md:text-4xl lg:text-5xl font-bold text-white mt-4 md:mt-10">Exotic tastes at your <br> doorstep</h1>
+                        <p class="text-white text-xs md:text-base">We supply highly quality organic products</p>
+                        <button class="btn my-btn-sm md:my-btn">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4"
+                    class="carousel-item relative w-full banner-background4 h-48 md:h-96 justify-center text-center">
+                    <div class=" md:space-y-4">
+                        <h1 class="text-xl md:text-4xl lg:text-5xl font-bold text-white mt-4 md:mt-10">Exotic tastes at your <br> doorstep</h1>
+                        <p class="text-white text-xs md:text-base">We supply highly quality organic products</p>
+                        <button class="btn my-btn-sm md:my-btn">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:flex absolute h-52 flex left-[70px] top-80 bg-white rounded-lg">
+                <div class="flex flex-col items-center mx-8">
+                    <img src="./images/fruit1.png" alt="" class="w-28 h-28">
+                    <p class="text-[#121212cc]">Strawberry</p>
+                </div>
+                <div class="flex flex-col items-center mx-8">
+                    <img src="./images/fruit2.png" alt="" class="w-28 h-28">
+                    <p class="text-[#121212cc]">Orange</p>
+                </div>
+                <div class="flex flex-col items-center mx-8">
+                    <img src="./images/fruit3.png" alt="" class="w-28 h-28">
+                    <p class="text-[#121212cc]">Mango</p>
+                </div>
+                <div class="flex flex-col items-center mx-8">
+                    <img src="./images/fruit4.png" alt="" class="w-28 h-28">
+                    <p class="text-[#121212cc]">Strawberry</p>
+                </div>
+                <div class="flex flex-col items-center mx-8">
+                    <img src="./images/fruit5.png" alt="" class="w-28 h-28">
+                    <p class="text-[#121212cc]">Mango</p>
+                </div>
+            </div>
+        </section>
     </header>
+    <!-- main section starts here -->
 </body>
 
 </html>
