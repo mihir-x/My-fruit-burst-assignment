@@ -82,7 +82,7 @@
     <!-- header section starts here--------------------------------------- -->
     <header class="max-w-screen-lg mx-auto">
         <!-- navbar starts here -->
-        <nav class="mt-4 md:mt-12 mb-4 md:mb-14">
+        <nav class="mt-4 md:mt-12 mb-4 md:mb-14 md:p-4">
             <!-- <div class="navbar md:bg-[#F85559] md:rounded-full p-4">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -131,24 +131,27 @@
             </div> -->
 
 
-            <div class="navbar  md:bg-[#F85559] md:rounded-full p-4">
-                <div class="navbar-start">
-                    <div class="dropdown md:hidden">
+            <div class="flex items-center flex-row-reverse md:flex-row justify-around  md:bg-[#F85559] md:rounded-full p-4">
+                <div class="">
+                    <div class="dropdown md:hidden relative">
                         <label tabindex="0" class="btn btn-ghost btn-circle">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M4 6h16M4 12h16M4 18h7" />
-                            </svg>
+                            </svg> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
                         </label>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box absolute -left-32">
                             <li><a>Home</a></li>
                             <li><a>About Us</a></li>
                             <li><a>Shop</a></li>
                             <li><a>All Fruits</a></li>
                             <div class="flex">
-                                <input type="search" name="" id="" class="rounded-full md:w-52 md:h-7 p-4"
+                                <input type="search" name="" id="" class="rounded-full md:w-52 md:h-7 p-4 border-2"
                                     placeholder="Search Here">
                                 <div class="relative">
                                     <a href=""><i
@@ -166,18 +169,18 @@
                         </ul>
                     </div>
                 </div>
-                <div class="navbar-center">
+                <div class="">
                     <div class="flex gap-4 items-center">
                         <img src="./images/logo.png" alt="">
                         <h2 class=" text-2xl md:text-4xl text-[#121212] md:text-white font-bold">Fruit Burst</h2>
                     </div>
                 </div>
-                <div class="navbar-end hidden lg:flex">
+                <div class=" hidden lg:flex">
                     <input type="search" name="" id="" class="rounded-full md:w-52 md:h-7 p-4"
                         placeholder="Search Here">
                     <div class="relative">
                         <a href=""><i
-                                class="fa-solid fa-magnifying-glass absolute -top-2 -left-8 text-[#121212]"></i></a>
+                                class="fa-solid fa-magnifying-glass absolute top-2 -left-8 text-[#121212]"></i></a>
                     </div>
                 </div>
             </div>
@@ -266,13 +269,13 @@
     <main class="max-w-screen-lg mx-auto">
         <!-- deal of the day section -->
         <section class="mt-10 md:mt-56 p-4">
-            <div class="flex flex-col md:flex-row gap-5 md:gap-12 lg:gap-56">
+            <div class="flex flex-col items-center md:flex-row gap-5 md:gap-12 lg:gap-56">
                 <div class="text-center md:text-left">
                     <h2 class="text-2xl md:text-3xl lg:text-5xl font-extrabold text-[#121212] mb-5">Deal of the day</h2>
                     <p class="text-[#12121299]">The festive season is right around the corner and that can only mean one thing: discounts, discounts and discounts.</p>
                 </div>
                 <!-- clock -->
-                <div>
+                <div class="">
                     <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
                         <div class="flex flex-col items-center">
                             <span class="countdown font-extrabold text-2xl md:text-4xl">
@@ -304,7 +307,7 @@
             <!-- deal of the day cards -->
             <div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 <!-- day of the deal card 1 -->
-                <div class="p-4 flex flex-col items-center space-y-2 border-2">
+                <div class="p-4 flex flex-col items-center space-y-2 border-2 rounded-lg">
                     <img src="./images/fruit6.png" alt="" class="mb-3">
                     <h4 class="font-bold text-xl border-b-2 pb-3">12.90$ - 18.85$</h4>
                     <p class="text-[#12121299]">Apples</p>
@@ -344,7 +347,7 @@
                     </dialog>
                 </div>
                 <!-- day of the deal card 2-->
-                <div class="p-4 flex flex-col items-center space-y-2 border-2">
+                <div class="p-4 flex flex-col items-center space-y-2 border-2 rounded-lg">
                     <img src="./images/fruit7.png" alt="" class="mb-3">
                     <h4 class="font-bold text-xl border-b-2 pb-3">12.90$ - 18.85$</h4>
                     <p class="text-[#12121299]">Orange</p>
@@ -384,7 +387,7 @@
                     </dialog>
                 </div>
                 <!-- day of the deal card 3-->
-                <div class="p-4 flex flex-col items-center space-y-2 border-2">
+                <div class="p-4 flex flex-col items-center space-y-2 border-2 rounded-lg">
                     <img src="./images/fruit8.png" alt="" class="mb-3">
                     <h4 class="font-bold text-xl border-b-2 pb-3">12.90$ - 18.85$</h4>
                     <p class="text-[#12121299]">Red Dragon</p>
@@ -424,7 +427,7 @@
                     </dialog>
                 </div>
                 <!-- day of the deal card 4-->
-                <div class="p-4 flex flex-col items-center space-y-2 border-2">
+                <div class="p-4 flex flex-col items-center space-y-2 border-2 rounded-lg">
                     <img src="./images/fruit9.png" alt="" class="mb-3">
                     <h4 class="font-bold text-xl border-b-2 pb-3">12.90$ - 18.85$</h4>
                     <p class="text-[#12121299]">Banana</p>
@@ -470,8 +473,8 @@
         </section>
         <!-- meet the team section -->
         <section class="mt-7 md:mt-24 p-4">
-            <div class="team-background relative">
-                <div class="w-full h-full bg-[#121212b3] absolute opacity-80"></div>
+            <div class="team-background relative rounded-lg">
+                <div class="w-full h-full bg-[#121212b3] absolute opacity-80 rounded-lg"></div>
                 <div class="text-center pt-4 md:pt-28 space-y-4 relative">
                     <h1 class="text-2xl md:text-5xl text-white font-extrabold">Meet the team section</h1>
                     <p class="font-medium text-white text-sm md:text-base">In any industry where the people behind a company are as important as the company itself. <br> Meet our amazing team members.
@@ -487,9 +490,9 @@
                             <h2 class="card-title text-white">Awlad Hossain</h2>
                             <p class="text-white">Fruits Expert</p>
                             <div class="space-x-4">
-                                <i class="fa-brands fa-facebook text-[#F85559] text-xl"></i>
-                                <i class="fa-brands fa-twitter text-[#F85559] text-xl"></i>
-                                <i class="fa-brands fa-linkedin-in text-[#F85559] text-xl"></i>
+                                <a href=""><i class="fa-brands fa-facebook text-[#F85559] text-xl"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter text-[#F85559] text-xl"></i></a>
+                                <a href=""><i class="fa-brands fa-linkedin-in text-[#F85559] text-xl"></i></a>
                             </div>
                         </div>
                     </div>
@@ -501,9 +504,9 @@
                             <h2 class="card-title text-white">Safia Chowdhury</h2>
                             <p class="text-white">Fruits Expert</p>
                             <div class="space-x-4">
-                                <i class="fa-brands fa-facebook text-[#F85559] text-xl"></i>
-                                <i class="fa-brands fa-twitter text-[#F85559] text-xl"></i>
-                                <i class="fa-brands fa-linkedin-in text-[#F85559] text-xl"></i>
+                                <a href=""><i class="fa-brands fa-facebook text-[#F85559] text-xl"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter text-[#F85559] text-xl"></i></a>
+                                <a href=""><i class="fa-brands fa-linkedin-in text-[#F85559] text-xl"></i></a>
                             </div>
                         </div>
                     </div>
@@ -515,9 +518,9 @@
                             <h2 class="card-title text-white">Rokib Hossain</h2>
                             <p class="text-white">Fruits Expert</p>
                             <div class="space-x-4">
-                                <i class="fa-brands fa-facebook text-[#F85559] text-xl"></i>
-                                <i class="fa-brands fa-twitter text-[#F85559] text-xl"></i>
-                                <i class="fa-brands fa-linkedin-in text-[#F85559] text-xl"></i>
+                                <a href=""><i class="fa-brands fa-facebook text-[#F85559] text-xl"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter text-[#F85559] text-xl"></i></a>
+                                <a href=""><i class="fa-brands fa-linkedin-in text-[#F85559] text-xl"></i></a>
                             </div>
                         </div>
                     </div>
@@ -529,9 +532,9 @@
                             <h2 class="card-title text-white">Chaity</h2>
                             <p class="text-white">Fruits Expert</p>
                             <div class="space-x-4">
-                                <i class="fa-brands fa-facebook text-[#F85559] text-xl"></i>
-                                <i class="fa-brands fa-twitter text-[#F85559] text-xl"></i>
-                                <i class="fa-brands fa-linkedin-in text-[#F85559] text-xl"></i>
+                                <a href=""> <i class="fa-brands fa-facebook text-[#F85559] text-xl"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter text-[#F85559] text-xl"></i></a>
+                                <a href=""> <i class="fa-brands fa-linkedin-in text-[#F85559] text-xl"></i></a>
                             </div>
                         </div>
                     </div>
@@ -618,12 +621,12 @@
                 </div>
             </div> -->
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <div class="flex flex-col justify-between row-start-2 lg:col-start-1 lg:row-start-1 ">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 text-center">
+                <div class="flex flex-col justify-between row-start-2 lg:col-start-1 lg:row-start-1 lg:text-start">
                     <div class="flex flex-col lg:flex-row items-center gap-4 md:mb-4 mt-4 md:mt-0">
                         <i class="fa-solid fa-people-group bg-[#1212121a] w-10 h-10 flex items-center justify-center p-2 rounded-full"></i>
                         <div class="flex flex-col items-center lg:items-start">
-                            <h4 class="text-lg font-bold md:text-xl">Dedicated Team</h4>
+                            <h4 class="text-lg font-extrabold md:text-xl">Dedicated Team</h4>
                             <div class="w-36 border-b-2 border-[#121212cc]"></div>
                             <p class="text-[#12121299]">Professional employees are there for you to pick the most
                                 amazing and fresh fruits.</p>
@@ -632,7 +635,7 @@
                     <div class="flex flex-col lg:flex-row items-center gap-4 md:mb-4 mt-4 md:mt-0">
                         <i class="fa-solid fa-heart-circle-check bg-[#1212121a] w-10 h-10 flex items-center justify-center p-2 rounded-full"></i>
                         <div class="flex flex-col items-center lg:items-start">
-                            <h4 class="text-lg font-bold md:text-xl">Fresh is Best</h4>
+                            <h4 class="text-lg font-extrabold md:text-xl">Fresh is Best</h4>
                             <div class="w-36 border-b-2 border-[#121212cc]"></div>
                             <p class="text-[#12121299]">Professional employees are there for you to pick the most
                                 amazing and fresh fruits.</p>
@@ -641,7 +644,7 @@
                     <div class="flex flex-col lg:flex-row items-center gap-4 md:mb-4 mt-4 md:mt-0">
                         <i class="fa-solid fa-gift bg-[#1212121a] w-10 h-10 flex items-center justify-center p-2 rounded-full"></i>
                         <div class="flex flex-col items-center lg:items-start">
-                            <h4 class="text-lg font-bold md:text-xl">Gift Certificates</h4>
+                            <h4 class="text-lg font-extrabold md:text-xl">Gift Certificates</h4>
                             <div class="w-36 border-b-2 border-[#121212cc]"></div>
                             <p class="text-[#12121299]">Professional employees are there for you to pick the most
                                 amazing and fresh fruits.</p>
@@ -653,7 +656,7 @@
                     <div class="flex flex-col lg:flex-row-reverse items-center gap-4 md:mb-4 mt-4 md:mt-0">
                         <i class="fa-solid fa-boxes-packing bg-[#1212121a] w-10 h-10 flex items-center justify-center p-2 rounded-full"></i>
                         <div class="flex flex-col items-center lg:items-end">
-                            <h4 class="text-lg font-bold md:text-xl ">Integrated Supplier</h4>
+                            <h4 class="text-lg font-extrabold md:text-xl ">Integrated Supplier</h4>
                             <div class="w-36 border-b-2 border-[#121212cc]"></div>
                             <p class="text-[#12121299] md:text-right">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
@@ -661,7 +664,7 @@
                     <div class="flex flex-col lg:flex-row-reverse items-center gap-4 md:mb-4 mt-4 md:mt-0">
                         <i class="fa-solid fa-ice-cream bg-[#1212121a] w-10 h-10 flex items-center justify-center p-2 rounded-full"></i>
                         <div class="flex flex-col items-center lg:items-end">
-                            <h4 class="text-lg font-bold md:text-xl">Sustainable Practice</h4>
+                            <h4 class="text-lg font-extrabold md:text-xl">Sustainable Practice</h4>
                             <div class="w-36 border-b-2 border-[#121212cc]"></div>
                             <p class="text-[#12121299] md:text-right">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
@@ -669,7 +672,7 @@
                     <div class="flex flex-col lg:flex-row-reverse items-center gap-4 md:mb-4 mt-4 md:mt-0">
                         <i class="fa-solid fa-thumbs-up bg-[#1212121a] w-10 h-10 flex items-center justify-center p-2 rounded-full"></i>
                         <div class="flex flex-col items-center lg:items-end">
-                            <h4 class="text-lg font-bold md:text-xl">The Benefits Only</h4>
+                            <h4 class="text-lg font-extrabold md:text-xl">The Benefits Only</h4>
                             <div class="w-36 border-b-2 border-[#121212cc]"></div>
                             <p class="text-[#12121299] md:text-right">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
